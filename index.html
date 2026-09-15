@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>こま | Hatch Pet</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600&family=Zen+Maru+Gothic:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <header class="topbar">
+        <a class="brand" href="#" aria-label="Hatch Pet home"><span class="brand-mark">✦</span> hatch pet</a>
+        <div class="pet-title"><span class="status-dot"></span><strong>こま</strong><span>はお部屋にいるよ</span></div>
+        <button class="sound-button" id="soundButton" type="button" aria-pressed="false" aria-label="サウンドをオンにする">♬</button>
+      </header>
+
+      <section class="room" aria-label="こまのお部屋">
+        <div class="wall-decoration sun"><span></span></div>
+        <div class="cloud cloud-one"></div><div class="cloud cloud-two"></div>
+        <div class="shelf"><i></i><i></i><i></i></div>
+        <div class="window"><div class="window-sky"></div><div class="window-frame vertical"></div><div class="window-frame horizontal"></div><div class="curtain left"></div><div class="curtain right"></div></div>
+        <div class="plant"><div class="pot"></div><span></span><span></span><span></span><span></span></div>
+
+        <div class="desk"><div class="monitor"><div class="screen"><span class="code one"></span><span class="code two"></span><span class="code three"></span><b>✦</b></div><div class="monitor-base"></div></div><div class="keyboard"></div></div>
+        <div class="rug"></div>
+        <div class="cat-wand" id="wand" aria-hidden="true"><div class="wand-stick"></div><div class="string"></div><div class="feather">✦</div></div>
+
+        <div class="pet-scene working" id="petScene">
+          <div class="speech" id="speech">typing...</div>
+          <div class="pet-shadow"></div>
+          <div class="tail"></div>
+          <div class="body"><div class="belly"></div><div class="paw paw-left"></div><div class="paw paw-right"></div></div>
+          <div class="head"><div class="ear ear-left"></div><div class="ear ear-right"></div><div class="face"><div class="eye left-eye"></div><div class="eye right-eye"></div><div class="muzzle"><span></span></div></div><div class="cheek left-cheek"></div><div class="cheek right-cheek"></div></div>
+        </div>
+      </section>
+
+      <section class="controls" aria-label="こまのお世話メニュー">
+        <p class="hint" id="hint">こまはパソコン作業中。お手伝いしてあげよう！</p>
+        <div class="action-grid">
+          <button class="action active" data-mode="work" type="button"><span class="icon laptop">⌨</span><span><b>おしごと</b><small>パソコンをする</small></span></button>
+          <button class="action" data-mode="sleep" type="button"><span class="icon moon">☾</span><span><b>おひるね</b><small>zzz といって寝る</small></span></button>
+          <button class="action" data-mode="play" type="button"><span class="icon toy">✦</span><span><b>あそぶ</b><small>猫じゃらしで遊ぶ</small></span></button>
+        </div>
+      </section>
+    </main>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
